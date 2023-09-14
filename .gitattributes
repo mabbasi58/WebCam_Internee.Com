@@ -2,3 +2,4 @@ Documents/WebCam/* filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
 Documents/WebCam/*.zip filter=lfs diff=lfs merge=lfs -text
 Documents/WebCam/** filter=lfs diff=lfs merge=lfs -text
+*webcam-app.zip filter=lfs diff=lfs merge=lfs -text
