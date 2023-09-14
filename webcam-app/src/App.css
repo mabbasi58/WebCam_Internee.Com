@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.camera {
+  min-height: 100vh;
+  position: relative;
+  background-color:rgba(0, 0, 0, 0.9) ;
+}
+
+.cameraview {
+  position: relative;
+}
+
+.result {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.4s;
+}
+
+
+.result.hasPhoto {
+  left: 0
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: 500px; /* Set the desired height for the video container */
+}
+
+
+canvas{
+  width: 80%;
+  max-width: 80%;
+  height: 400px;
+  margin-left: 10rem;
+}
+/* Recording Button (Left Side) */
+.record-button {
+  margin-top: 40rem;
+  position: absolute;
+  margin-left: 25rem;
+  bottom: 20px;
+  left: 2rem; /* Adjust the left position as needed */
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #5470e0 50%, #FF4F84 50%);
+  background-position: 0%;
+  background-size: 200%;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 5%;
+  
+}
+
+.record-button:hover {
+  background-position: 100%;
+}
+.stop-button{
+  margin-top: 40rem;
+  position: absolute;
+  margin-left: 25rem;
+  bottom: 20px;
+  left: 2rem; /* Adjust the left position as needed */
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #5470e0 50%, #FF4F84 50%);
+  background-position: 0%;
+  background-size: 200%;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 10%;
+
+}
+
+/* Close Button (Center) */
+.close-button {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 45rem;
+  transform: translateX(-50%); /* Center horizontally */
+  appearance: none;
+  border: none;
+  border-radius: 10%;
+  outline: none;
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #FF844F 50%, #507fec 50%);
+  background-position: 0%;
+  background-size: 200%;
+  color: #FFF;
+  font-size: 20px;
+  margin-left: 70rem;
+  font-weight: 500;
+  transition: 0.4s;
+  cursor: pointer;
+  
+}
+
+.close-button:hover {
+  background-position: 100%;
+}
+
+/* Snap Button (Right Side) */
+.snap-button {
+  position: absolute;
+  bottom: 20px;
+  right: 2rem; 
+  margin-right: 30rem;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #5470e0 50%, #FF4F84 50%);
+  background-position: 0%;
+  background-size: 200%;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.snap-button:hover {
+  background-position: 100%;
+}
+.download-button {
+  margin-top: 40rem;
+  position: absolute;
+  margin-left: 50rem;
+  bottom: 20px;
+  left: 2rem; /* Adjust the left position as needed */
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-image: linear-gradient(to right, #5470e0 50%, #FF4F84 50%);
+  background-position: 0%;
+  background-size: 200%;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 10%;
+
+}
+
